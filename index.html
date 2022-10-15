@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <script src="midterm.js" defer></script>
+
+    <style>
+        header {
+            height: 50px;
+            font-size:200%;
+            background-color: rgb(4, 136, 208);
+            text-align: center;
+        }
+        .wrapper {
+            margin-top: 16px;
+            display: flex;
+            gap: 50px;
+        }
+        .list {
+            background-color: rgb(168, 246, 255);
+            padding: 15px;
+        }
+        .options {
+            background-color: rgb(150, 216, 247);
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>Choose your game</header>
+    <div class="wrapper">
+        <div class="list"></div>
+        <div class="options">
+            <p>
+                <label for="choice">What would you like to do?</label>
+                <ul>
+                     <li>Create a Game - C</li>
+                     <li>Read the details for a Game - R</li>
+                     <li>Update the details for a Game - U</li>
+                     <li>Delete a Game - D</li>
+                </ul>
+                <input type="text" id="choice" maxlength="15" size="15">
+                <button onclick="choice()">Submit your choice</button>
+            </p>
+            <p class="info"></p>
+        </div>
+    </div>
+ 
+</body>
+</html>
